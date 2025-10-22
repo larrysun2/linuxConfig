@@ -25,7 +25,7 @@ if ! id -u "$USERNAME" >/dev/null 2>&1; then
 fi
 
 echo "[3/8] Instalando XFCE + XRDP…"
-apt install -y xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils xrdp wget ca-certificates ionice
+apt install -y xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils xrdp wget ca-certificates
 
 echo "[4/8] Configurando XRDP para XFCE…"
 echo "startxfce4" > "/home/$USERNAME/.xsession"
